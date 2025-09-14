@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DSS Mate – Trang chủ</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    :root{
+      --tinder:#fe3c72;   /* màu chính kiểu Tinder */
+      --bg:#fff;
+      --text:#222;
+      --muted:#666;
+    }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--text);}
+    /* ===== nav ===== */
+    .nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid #eee}
+    .nav .wrap{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:24px;padding:14px 20px}
+    .nav .brand{font-weight:800;font-size:20px;color:var(--tinder)}
+    .nav .menu{display:flex;gap:18px;flex:1}
+    .nav .menu a{color:var(--text);opacity:.8;font-weight:500}
+    .nav .menu a:hover{opacity:1}
+    .nav .auth{display:flex;gap:10px}
+    .nav .auth a{padding:8px 16px;border-radius:20px;font-weight:600}
+    .nav .auth .login{color:var(--tinder);border:1px solid var(--tinder)}
+    .nav .auth .signup{background:var(--tinder);color:#fff}
+    /* ===== hero ===== */
+    .hero{max-width:1200px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .hero h1{font-size:42px;margin:0 0 14px;color:var(--tinder)}
+    .hero p{font-size:18px;color:var(--muted);margin:0 0 24px}
+    .hero .actions{display:flex;gap:14px}
+    .hero .actions a{padding:12px 28px;border-radius:30px;font-size:16px;font-weight:600;text-decoration:none}
+    .hero .actions .primary{background:var(--tinder);color:#fff}
+    .hero .actions .ghost{border:2px solid var(--tinder);color:var(--tinder)}
+    .hero img{max-width:100%;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+    /* ===== sections ===== */
+    .section{max-width:1100px;margin:80px auto;padding:0 20px;text-align:center}
+    .section h2{font-size:28px;margin-bottom:20px;color:var(--tinder)}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+    .card{background:#fafafa;padding:20px;border-radius:16px;border:1px solid #eee;text-align:left}
+    .card b{display:block;margin-bottom:8px}
+    /* ===== footer ===== */
+    footer{border-top:1px solid #eee;padding:20px;text-align:center;color:var(--muted);font-size:14px}
+    @media(max-width:900px){ .hero{grid-template-columns:1fr;text-align:center} .hero img{margin-top:20px} }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand">DSS Mate</div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#features">Tính năng</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="auth">
+        <a class="login" href="auth.html">Đăng nhập</a>
+        <a class="signup" href="auth.html">Đăng ký</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Tìm người phù hợp<br>DSSMate</h1>
+      <p>DSS Mate giúp bạn chọn bạn đời dựa trên <b>ngũ hành, bát trạch</b> và <b>sở thích, giá trị sống</b>.</p>
+      <div class="actions">
+        <a class="primary" href="auth.html">Bắt đầu ngay</a>
+        <a class="ghost" href="chat.html">Mở Chat</a>
+      </div>
+    </div>
+    <div>
+      <img src="./assets/hero_demo.png" alt="demo giao diện" onerror="this.style.display='none'">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About us</h2>
+    <div class="cards">
+      <div class="card"><b>Minh bạch</b><p class="muted">Giải thích rõ lý do điểm số: sinh, khắc, bát trạch.</p></div>
+      <div class="card"><b>Bảo mật</b><p class="muted">Dữ liệu cá nhân của bạn được giữ an toàn.</p></div>
+      <div class="card"><b>Nhanh chóng</b><p class="muted">Swipe và chat tức thì, không cần cài đặt.</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <h2>Tính năng nổi bật</h2>
+    <div class="cards">
+      <div class="card"><b>Swipe</b><p class="muted">Xếp hạng theo hợp mệnh & phong thủy.</p></div>
+      <div class="card"><b>Explain</b><p class="muted">Xem chi tiết vì sao match phù hợp hoặc không.</p></div>
+      <div class="card"><b>Chat</b><p class="muted">Giao diện chat như Messenger bản PC.</p></div>
+      <div class="card"><b>Upload ảnh</b><p class="muted">Tải ảnh trực tiếp từ thiết bị, cập nhật hồ sơ.</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <div class="card">
+      <p><b>Hệ thống tính điểm như thế nào?</b><br><span class="muted">Kết hợp ngũ hành, bát trạch, can/chi và thói quen, giá trị sống.</span></p>
+      <p><b>Chat có realtime không?</b><br><span class="muted">Ban đầu dùng polling; có thể nâng cấp SignalR/WebSocket.</span></p>
+    </div>
+  </section>
+
+  <footer>© 2025 DSS Mate</footer>
+
+</body>
+</html>

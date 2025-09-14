@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\app",
+    "\\backend\\app\\Core",
+    "\\backend\\app\\db",
+    "\\backend\\app\\routers",
+    "\\backend\\app\\stactic",
+    "\\backend\\Controller",
+    "\\frontend"
+  ],
+  "SelectedNode": "\\frontend",
+  "PreviewInSolutionExplorer": false
+}

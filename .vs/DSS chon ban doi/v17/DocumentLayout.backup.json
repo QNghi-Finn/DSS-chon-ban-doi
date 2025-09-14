@@ -1,0 +1,560 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DSS chon ban doi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\Controller\\Controller_User.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\Controller\\Controller_User.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Core\\Config.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Core\\Config.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\media.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\media.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\data\\Dangky_chuanhoatag.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\Dangky_chuanhoatag.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\db\\sessin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\db\\sessin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\run_dev.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\run_dev.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\alembic.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\alembic.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\requiremenrs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\requiremenrs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\utils\\geo.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\utils\\geo.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\utils\\metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\utils\\metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\chat.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\chat.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\match.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\match.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\swipe.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\swipe.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\recommend.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\recommend.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\profile.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\profile.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\routers\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Schemas\\chat.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Schemas\\chat.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Schemas\\prefs.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Schemas\\prefs.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Schemas\\value_trait.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Schemas\\value_trait.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Schemas\\interest.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Schemas\\interest.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Schemas\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Schemas\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\fengshui.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\fengshui.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\event_match.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\event_match.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\prefs.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\prefs.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\value_trait.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\value_trait.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\interest.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\interest.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Models\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Models\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\db\\init_db.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\db\\init_db.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Core\\deps.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Core\\deps.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\Core\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\Core\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DSS chon ban doi\\backend\\app\\db\\base.py||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\db\\base.py||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 936,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Controller_User.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\Controller\\Controller_User.py",
+              "RelativeDocumentMoniker": "backend\\Controller\\Controller_User.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\Controller\\Controller_User.py",
+              "RelativeToolTip": "backend\\Controller\\Controller_User.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T10:56:16.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dangky_chuanhoatag.sql",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\data\\Dangky_chuanhoatag.sql",
+              "RelativeDocumentMoniker": "data\\Dangky_chuanhoatag.sql",
+              "ToolTip": "C:\\DSS chon ban doi\\data\\Dangky_chuanhoatag.sql",
+              "RelativeToolTip": "data\\Dangky_chuanhoatag.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-09-10T10:50:16.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sessin.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\db\\sessin.py",
+              "RelativeDocumentMoniker": "backend\\app\\db\\sessin.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\db\\sessin.py",
+              "RelativeToolTip": "backend\\app\\db\\sessin.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:53:17.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "run_dev.sh",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\run_dev.sh",
+              "RelativeDocumentMoniker": "backend\\run_dev.sh",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\run_dev.sh",
+              "RelativeToolTip": "backend\\run_dev.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2025-09-10T07:40:55.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "alembic.ini",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\alembic.ini",
+              "RelativeDocumentMoniker": "backend\\alembic.ini",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\alembic.ini",
+              "RelativeToolTip": "backend\\alembic.ini",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
+              "WhenOpened": "2025-09-10T07:40:22.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "requiremenrs.txt",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\requiremenrs.txt",
+              "RelativeDocumentMoniker": "backend\\requiremenrs.txt",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\requiremenrs.txt",
+              "RelativeToolTip": "backend\\requiremenrs.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-09-10T07:40:05.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "geo.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\utils\\geo.py",
+              "RelativeDocumentMoniker": "backend\\app\\utils\\geo.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\utils\\geo.py",
+              "RelativeToolTip": "backend\\app\\utils\\geo.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:38:16.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "metrics.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\utils\\metrics.py",
+              "RelativeDocumentMoniker": "backend\\app\\utils\\metrics.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\utils\\metrics.py",
+              "RelativeToolTip": "backend\\app\\utils\\metrics.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:38:10.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "chat.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\chat.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\chat.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\chat.py",
+              "RelativeToolTip": "backend\\app\\routers\\chat.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:37:39.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "match.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\match.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\match.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\match.py",
+              "RelativeToolTip": "backend\\app\\routers\\match.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:37:31.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "swipe.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\swipe.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\swipe.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\swipe.py",
+              "RelativeToolTip": "backend\\app\\routers\\swipe.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:37:22.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "recommend.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\recommend.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\recommend.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\recommend.py",
+              "RelativeToolTip": "backend\\app\\routers\\recommend.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:37:09.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "media.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\media.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\media.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\media.py",
+              "RelativeToolTip": "backend\\app\\routers\\media.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:36:57.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "profile.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\profile.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\profile.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\profile.py",
+              "RelativeToolTip": "backend\\app\\routers\\profile.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:36:43.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "auth.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\routers\\auth.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\auth.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\routers\\auth.py",
+              "RelativeToolTip": "backend\\app\\routers\\auth.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:36:30.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "chat.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\chat.py",
+              "RelativeDocumentMoniker": "backend\\app\\Schemas\\chat.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\chat.py",
+              "RelativeToolTip": "backend\\app\\Schemas\\chat.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:33:29.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "prefs.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\prefs.py",
+              "RelativeDocumentMoniker": "backend\\app\\Schemas\\prefs.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\prefs.py",
+              "RelativeToolTip": "backend\\app\\Schemas\\prefs.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:33:22.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "value_trait.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\value_trait.py",
+              "RelativeDocumentMoniker": "backend\\app\\Schemas\\value_trait.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\value_trait.py",
+              "RelativeToolTip": "backend\\app\\Schemas\\value_trait.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:33:07.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "interest.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\interest.py",
+              "RelativeDocumentMoniker": "backend\\app\\Schemas\\interest.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\interest.py",
+              "RelativeToolTip": "backend\\app\\Schemas\\interest.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:32:40.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "user.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\user.py",
+              "RelativeDocumentMoniker": "backend\\app\\Schemas\\user.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Schemas\\user.py",
+              "RelativeToolTip": "backend\\app\\Schemas\\user.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:32:11.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "fengshui.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\fengshui.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\fengshui.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\fengshui.py",
+              "RelativeToolTip": "backend\\app\\Models\\fengshui.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:24:27.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "event_match.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\event_match.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\event_match.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\event_match.py",
+              "RelativeToolTip": "backend\\app\\Models\\event_match.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:24:06.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "prefs.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\prefs.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\prefs.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\prefs.py",
+              "RelativeToolTip": "backend\\app\\Models\\prefs.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:23:47.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "value_trait.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\value_trait.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\value_trait.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\value_trait.py",
+              "RelativeToolTip": "backend\\app\\Models\\value_trait.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:23:30.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "interest.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\interest.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\interest.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\interest.py",
+              "RelativeToolTip": "backend\\app\\Models\\interest.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:23:13.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "user.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Models\\user.py",
+              "RelativeDocumentMoniker": "backend\\app\\Models\\user.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Models\\user.py",
+              "RelativeToolTip": "backend\\app\\Models\\user.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:22:59.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "init_db.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\db\\init_db.py",
+              "RelativeDocumentMoniker": "backend\\app\\db\\init_db.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\db\\init_db.py",
+              "RelativeToolTip": "backend\\app\\db\\init_db.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:20:39.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "deps.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Core\\deps.py",
+              "RelativeDocumentMoniker": "backend\\app\\Core\\deps.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Core\\deps.py",
+              "RelativeToolTip": "backend\\app\\Core\\deps.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:19:33.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "security.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Core\\security.py",
+              "RelativeDocumentMoniker": "backend\\app\\Core\\security.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Core\\security.py",
+              "RelativeToolTip": "backend\\app\\Core\\security.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:19:18.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\Core\\Config.py",
+              "RelativeDocumentMoniker": "backend\\app\\Core\\Config.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\Core\\Config.py",
+              "RelativeToolTip": "backend\\app\\Core\\Config.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:18:59.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\main.py",
+              "RelativeDocumentMoniker": "backend\\app\\main.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\main.py",
+              "RelativeToolTip": "backend\\app\\main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-10T07:18:18.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "base.py",
+              "DocumentMoniker": "C:\\DSS chon ban doi\\backend\\app\\db\\base.py",
+              "RelativeDocumentMoniker": "backend\\app\\db\\base.py",
+              "ToolTip": "C:\\DSS chon ban doi\\backend\\app\\db\\base.py",
+              "RelativeToolTip": "backend\\app\\db\\base.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-09-04T09:06:50.517Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

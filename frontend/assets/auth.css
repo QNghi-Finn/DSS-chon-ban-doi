@@ -1,0 +1,7 @@
+.page.auth-page .card{max-width:900px;margin:24px auto}
+.page.auth-page h1{margin:0 0 12px}
+.page.auth-page h2{margin:18px 0 8px;font-size:16px}
+.page.auth-page form.grid{grid-template-columns:1fr 1fr}
+.page.auth-page .row input[type=number]{width:140px}
+.page.auth-page hr{border:none;border-top:1px solid var(--border);margin:18px 0}
+.page.auth-page .muted{margin-top:6px}

@@ -1,0 +1,13 @@
+/* danh sach match + hop chat */
+.chat-layout{display:grid;grid-template-columns:260px 1fr;gap:12px}
+.chat-matches{border:1px solid var(--border);border-radius:12px;height:520px;overflow:auto;background:#0f1320}
+.chat-box{display:grid;grid-template-rows:auto 1fr auto;border:1px solid var(--border);border-radius:12px;height:520px;background:var(--surface)}
+.chat-header{padding:10px;border-bottom:1px solid var(--border);background:#0f1320}
+.chat-body{padding:10px;overflow:auto;display:flex;flex-direction:column;gap:8px}
+.msg{padding:8px 12px;border-radius:12px;max-width:70%}
+.msg.me{background:var(--accent);color:#0e1117;align-self:flex-end}
+.msg.other{background:#1a2030}
+.chat-input{display:flex;gap:8px;border-top:1px solid var(--border);padding:10px}
+.chat-matches .item{display:flex;gap:10px;align-items:center;padding:8px;border-bottom:1px solid var(--border);cursor:pointer}
+.chat-matches .item:hover{background:#141a2a}
+.chat-matches img{width:40px;height:40px;border-radius:50%}

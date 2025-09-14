@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DSS Mate – Chat</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/chat.css" />
+  <style>
+    .nav{background:#0f1320;border-bottom:1px solid var(--border)}
+    .nav .wrap{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 16px}
+    .brand{font-weight:800}
+    /* thread list */
+    .thread-item{display:flex;gap:10px;padding:10px;cursor:pointer;border-bottom:1px solid var(--border)}
+    .thread-item:hover{background:#141a2a}
+    .thread-item.active{background:#172033}
+    .thread-item .name{font-weight:600}
+    .thread-item .last{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .thread-item .time{font-size:11px;color:var(--muted)}
+    /* bubbles */
+    .msg-row{display:flex;gap:8px;align-items:flex-end}
+    .bubble{padding:10px 12px;border-radius:18px;max-width:70%}
+    .msg.me .bubble{background:var(--accent);color:#0e1117}
+    .msg.other .bubble{background:#1a2030}
+    .msg.me{justify-content:flex-end}
+    .msg.other{justify-content:flex-start}
+    .msg .meta{font-size:11px;color:var(--muted);margin:2px 6px}
+    .day-sep{display:flex;justify-content:center;margin:10px 0}
+    .day-sep span{font-size:12px;color:var(--muted);padding:3px 10px;border:1px solid var(--border);border-radius:999px;background:#0f1320}
+    .typing{font-size:12px;color:var(--muted);padding:4px 8px}
+    .chat-input input{flex:1}
+  </style>
+</head>
+<body class="page chat-page">
+  <!-- top nav -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand">DSS Mate</div>
+      <div class="spacer"></div>
+      <a class="ghost" href="index.html">Ve trang chu</a>
+      <button id="btnLogout" class="link">Dang xuat</button>
+    </div>
+  </header>
+
+  <!-- layout -->
+  <main class="container">
+    <div class="chat-layout">
+      <!-- Sidebar -->
+      <aside class="chat-matches">
+        <div class="search-box">
+          <input id="searchBox" placeholder="Tim cuoc tro chuyen…">
+        </div>
+        <div id="threadList"></div>
+      </aside>
+
+      <!-- Khung chat -->
+      <section class="chat-box">
+        <div class="chat-header">
+          <div class="row justify-space-between">
+            <div id="chatTitle" class="title"><b>Chon mot cuoc tro chuyen</b></div>
+            <div class="row gap-6">
+              <button class="ghost" title="Goi (demo)">📞</button>
+              <button class="ghost" title="Thong tin (demo)">ℹ️</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="chatBody" class="chat-body"></div>
+
+        <form id="chatForm" class="chat-input hidden">
+          <button type="button" class="ghost" id="btnAttach" title="Dinh kem (demo)">📎</button>
+          <input name="msg" placeholder="Nhap tin nhan…" autocomplete="off" />
+          <button type="submit" class="primary">Gui</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="./js/app.js"></script>
+  <script>
+    const me = storage.requireUser();
+    document.getElementById('btnLogout').onclick=()=>{storage.clear();location.href='auth.html';};
+
+    let threads=[], filtered=[], current={matchId:null, otherId:null, otherName:null};
+    const POLL_MS=3000; let pollTimer=null, typingTimer=null;
+
+    init();
+
+    async function init(){ await loadThreads(); bindSearch(); }
+    function bindSearch(){
+      const box=document.getElementById('searchBox');
+      box.addEventListener('input',()=>{ const q=box.value.toLowerCase();
+        filtered = threads.filter(t => (t.otherName||t.otherId).toLowerCase().includes(q));
+        renderThreads();
+      });
+    }
+    async function loadThreads(){
+      const data=await api.matches(me.userId);
+      threads = data.map(m=>{
+        const other=(m.userA===me.userId)?m.userB:m.userA;
+        return {id:m.id, otherId:other, otherName:other, lastText:'', lastTime:m.matchedAt};
+      });
+      filtered=threads.slice(); renderThreads();
+    }
+    function renderThreads(){
+      const list=document.getElementById('threadList');
+      if(!filtered.length){ list.innerHTML='<div class="typing">Chua co cuoc tro chuyen</div>'; return; }
+      list.innerHTML = filtered.map(t=>`
+        <div class="thread-item ${t.id===current.matchId?'active':''}" onclick="openThread('${t.id}','${t.otherId}')">
+          <img src="/uploads/${t.otherId}.jpg" onerror="this.src='/uploads/default_1.jpg'" style="width:44px;height:44px;border-radius:50%;object-fit:cover">
+          <div style="flex:1;min-width:0">
+            <div class="row" style="justify-content:space-between">
+              <div class="name">${escapeHtml(t.otherName)}</div>
+              <div class="time">${formatTime(t.lastTime)}</div>
+            </div>
+            <div class="last">${escapeHtml(t.lastText||'Bat dau tro chuyen')}</div>
+          </div>
+        </div>`).join('');
+    }
+    async function openThread(matchId, otherId){
+      current={matchId, otherId, otherName:otherId};
+      document.getElementById('chatTitle').textContent=`Tro chuyen voi ${otherId}`;
+      document.getElementById('chatForm').classList.remove('hidden');
+      await renderMessages(); startPolling();
+    }
+    function startPolling(){ if(pollTimer) clearInterval(pollTimer); pollTimer=setInterval(renderMessages,POLL_MS); }
+    async function renderMessages(){
+      if(!current.matchId) return;
+      const list=await api.messages(current.matchId);
+      const body=document.getElementById('chatBody'); let html='', lastDay='';
+      list.forEach(m=>{
+        const isMe=(m.fromUserId===me.userId);
+        const d=new Date(m.createdAt||m.CreatedAt||Date.now());
+        const dayKey=d.toDateString();
+        if(dayKey!==lastDay){ html += `<div class="day-sep"><span>${fmtDay(d)}</span></div>`; lastDay=dayKey; }
+        html += `
+        <div class="msg-row msg ${isMe?'me':'other'}">
+          ${!isMe?`<img src="/uploads/${current.otherId}.jpg" onerror="this.src='/uploads/default_1.jpg'" style="width:28px;height:28px;border-radius:50%;object-fit:cover">`:''}
+          <div>
+            <div class="bubble">${escapeHtml(m.body||m.Body)}</div>
+            <div class="meta">${formatTime(d)}${isMe && m.seen?' · Da xem':''}</div>
+          </div>
+        </div>`;
+      });
+      body.innerHTML = html || `<div class="typing">Hay gui loi chao 👋</div>`;
+      body.scrollTop = body.scrollHeight;
+
+      const last=list[list.length-1]; const th=threads.find(t=>t.id===current.matchId);
+      if(th){ th.lastText=last?(last.body||last.Body):''; th.lastTime=last?(last.createdAt||last.CreatedAt):th.lastTime; }
+      renderThreads();
+    }
+    chatForm.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const txt=chatForm.msg.value.trim(); if(!txt) return;
+      showTyping(true); chatForm.msg.value='';
+      await api.sendMessage(current.matchId, me.userId, txt);
+      showTyping(false); await renderMessages();
+    });
+    function showTyping(on){
+      const body=document.getElementById('chatBody'); let tip=document.getElementById('typingRow');
+      if(on){ if(!tip){ tip=document.createElement('div'); tip.id='typingRow'; tip.className='typing'; tip.textContent=`${current.otherName} dang go…`; body.appendChild(tip); }
+        body.scrollTop=body.scrollHeight; clearTimeout(typingTimer); typingTimer=setTimeout(()=>showTyping(false),1200);
+      } else { if(tip) tip.remove(); }
+    }
+    // utils
+    function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+    function formatTime(t){const d=(t instanceof Date)?t:new Date(t); return d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});}
+    function fmtDay(d){const T=new Date(), Y=new Date(Date.now()-86400000);
+      const same=(a,b)=>a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate();
+      if(same(d,T)) return 'Hom nay'; if(same(d,Y)) return 'Hom qua'; return d.toLocaleDateString();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* ===== base ===== */
+:root{
+  --bg:#0b0d12; --surface:#12161f; --text:#e6edf3; --muted:#8b94a7;
+  --border:#1f2633; --accent:#6aa1ff; --ok:#62d394; --danger:#ff6a6a;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,Segoe UI,Roboto,Arial}
+
+/* links + controls */
+a{color:var(--accent);text-decoration:none}
+button,input,select,textarea{
+  background:#0f1320;border:1px solid var(--border);color:var(--text);
+  padding:10px;border-radius:10px;font:inherit
+}
+button{cursor:pointer}
+button.primary{background:var(--accent);border:none;color:#0e1117;font-weight:600}
+button.ghost{background:transparent;border:1px solid var(--border)}
+button.link{background:transparent;border:none;color:var(--muted);text-decoration:underline}
+input::placeholder, textarea::placeholder{color:#6b7280}
+img{max-width:100%;display:block;border-radius:12px}
+.muted{color:var(--muted)}
+.hidden{display:none !important}
+
+/* layout helpers */
+.container{max-width:1000px;margin:20px auto;padding:0 16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid .col2{grid-column:span 2}
+.row{display:flex;gap:10px;align-items:center}
+.row.center{justify-content:center}
+.row.end{justify-content:flex-end}
+
+/* topbar */
+.topbar{display:flex;align-items:center;padding:10px 16px;border-bottom:1px solid var(--border);background:#0f1320;position:sticky;top:0;z-index:50}
+.topbar .brand{font-weight:700}
+.topbar .spacer{flex:1}
+.me{color:var(--muted)}
+
+/* tabs */
+.tabs{display:flex;gap:8px;margin:16px 0}
+.tabs button{padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:#0f1320;color:var(--muted)}
+.tabs button.active{background:var(--accent);color:#0e1117;border:none}
+.tab{display:none}
+.tab.active{display:block}
+
+/* forms */
+.form{display:grid;gap:12px}
+.form .row{gap:12px}
+label{display:block;font-weight:600;margin-bottom:6px}
+.input{display:flex;flex-direction:column;gap:6px}
+.help{font-size:12px;color:var(--muted)}
+
+/* toast (simple) */
+.toast{position:fixed;right:16px;bottom:16px;background:#0f1320;border:1px solid var(--border);padding:10px 14px;border-radius:12px}
