@@ -1,106 +1,211 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DSS Mate – Đăng ký / Đăng nhập</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body class="page auth-page">
-  <main class="card">
-    <h1>Đăng ký tài khoản</h1>
-    <form id="signupForm" class="grid">
-      <div class="col2"><label>Email <input type="email" name="email" required /></label></div>
-      <div><label>Mật khẩu <input type="password" name="password" required minlength="6" /></label></div>
-      <div><label>Họ tên <input type="text" name="fullName" required /></label></div>
-      <div><label>Giới tính
-        <select name="gender"><option value="male">Nam</option><option value="female">Nữ</option><option value="other">Khác</option></select>
-      </label></div>
-      <div><label>Ngày sinh <input type="date" name="birthday" required /></label></div>
-      <div><label>Ảnh đại diện (URL) <input type="url" name="avatarUrl" placeholder="/uploads/default_1.jpg" /></label></div>
-      <div class="col2">
-        <label>Toạ độ (tuỳ chọn)</label>
-        <div class="row">
-          <input type="number" step="0.0001" name="latitude" placeholder="Lat" />
-          <input type="number" step="0.0001" name="longitude" placeholder="Lng" />
-          <button type="button" id="btnGeo">Lấy vị trí</button>
-        </div>
-      </div>
-      <div class="col2"><label>Sở thích (phẩy ,)
-        <input type="text" name="hobbiesText" placeholder="doc sach, gym, xem phim" /></label>
-      </div>
-      <div class="col2"><label>Thói quen
-        <input type="text" name="habitsText" placeholder="khong hut thuoc, uong ruou it" /></label>
-      </div>
-      <div class="col2"><label>Quan điểm sống
-        <input type="text" name="valuesText" placeholder="gia dinh, trung thuc" /></label>
-      </div>
-      <div class="row end"><buttom class="primary">Tạo tài khoản</button></div>
-    </form>
+  <title>DSS Mate — Đăng ký / Đăng nhập</title>
 
-    <hr/>
-    <h2>Đăng nhập</h2>
-    <form id="loginForm" class="row">
-      <input type="email" name="email" placeholder="email@demo.local" required />
-      <input type="password" name="password" placeholder="******" required />
-      <buttom>Đăng nhập</buttom>
-    </form>
-    <p class="muted">Đăng ký/đăng nhập xong sẽ chuyển sang <b><index class="html"></index></b>.</p>
+  <!-- dùng chung styles nếu bạn có -->
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    :root{
+      --bg:#0f1115; --card:#161a22; --text:#e7e9ee; --muted:#9aa3b2; --border:#222838; --primary:#5865f2;
+    }
+    body{background:var(--bg); color:var(--text); font-family: Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0}
+    .topbar{display:flex; align-items:center; gap:14px; padding:14px 18px; border-bottom:1px solid var(--border); background:#0d1016; position:sticky; top:0; z-index:5}
+    .brand{font-weight:700}
+    .spacer{flex:1}
+    .link{color:#9db1ff; text-decoration:none}
+    .container{max-width:980px; padding:20px; margin:0 auto}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px; margin-bottom:18px}
+    h1,h2{margin:0 0 12px 0}
+    label{display:flex; flex-direction:column; gap:6px; font-size:14px}
+    input, select, textarea{background:#0f1320; color:var(--text); border:1px solid var(--border); border-radius:10px; padding:10px 12px; outline:none}
+    textarea{min-height:70px; resize:vertical}
+    .row{display:flex; gap:12px; align-items:center}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:760px){ .grid2{grid-template-columns:1fr} }
+    .primary{background:var(--primary); border:none; color:#fff; padding:10px 14px; border-radius:10px; cursor:pointer}
+    button{cursor:pointer}
+    .muted{color:var(--muted)}
+    .filepick{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+    .avatar-preview{width:64px; height:64px; border-radius:50%; object-fit:cover; border:1px solid var(--border)}
+    .error{color:#ff7b7b}
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">DSS Mate</div>
+    <div class="spacer"></div>
+    <a class="link" href="index.html">Trang chủ</a>
+    <a class="link" href="chat.html">Chat</a>
+  </header>
+
+  <main class="container">
+    <!-- ĐĂNG KÝ -->
+    <section class="card">
+      <h1>Đăng ký tài khoản</h1>
+
+      <form id="signupForm">
+        <div class="grid2">
+          <label>Email
+            <input id="suEmail" type="email" required placeholder="you@email.com">
+          </label>
+          <label>Mật khẩu
+            <input id="suPassword" type="password" required placeholder="******">
+          </label>
+
+          <label>Họ tên
+            <input id="suName" required placeholder="Nguyen Van A">
+          </label>
+          <label>Giới tính
+            <select id="suGender">
+              <option value="Nam">Nam</option>
+              <option value="Nu">Nữ</option>
+              <option value="Khac">Khác</option>
+            </select>
+          </label>
+
+          <label>Ngày tháng năm sinh
+            <input id="suDob" type="date" required>
+          </label>
+
+          <div>
+            <div>Avatar (tải từ thiết bị)</div>
+            <div class="filepick">
+              <input id="suAvatar" type="file" accept="image/*" title="Chọn ảnh đại diện">
+              <span id="fileName" class="muted">Chưa chọn ảnh</span>
+              <img id="avatarPreview" class="avatar-preview" src="" alt="preview">
+            </div>
+          </div>
+
+          <label>Học vấn / Trường
+            <input id="suEducation" placeholder="Ví dụ: HUST, VNU...">
+          </label>
+          <label>Nghề nghiệp
+            <input id="suOccupation" placeholder="Ví dụ: Developer">
+          </label>
+
+          <label>Quê quán / Quốc tịch
+            <input id="suNativeland" value="Vietnam">
+          </label>
+          <label>Giới thiệu ngắn (Bio)
+            <textarea id="suBio" maxlength="140" placeholder="Giới thiệu ngắn gọn..."></textarea>
+          </label>
+        </div>
+
+        <div class="row margin-top-12">
+          <button class="primary" type="submit">Tạo tài khoản</button>
+          <span id="suMsg" class="muted"></span>
+        </div>
+      </form>
+    </section>
+
+    <!-- ĐĂNG NHẬP -->
+    <section class="card">
+      <h2>Đăng nhập</h2>
+      <form id="loginForm" class="row login-form">
+        <input id="liEmail" type="email" placeholder="email đã đăng ký" required>
+        <input id="liPassword" type="password" placeholder="******" required>
+        <button class="primary" type="submit">Đăng nhập</button>
+        <span id="liMsg" class="muted"></span>
+      </form>
+    </section>
   </main>
 
-  <script src="js/app.js"></script>
   <script>
-    // Lấy vị trí
-    document.getElementById('btnGeo').onclick = () => {
-      if (!navigator.geolocation) return alert('Trình duyệt không hỗ trợ vị trí');
-      navigator.geolocation.getCurrentPosition(pos => {
-        signupForm.latitude.value  = pos.coords.latitude.toFixed(6);
-        signupForm.longitude.value = pos.coords.longitude.toFixed(6);
-      }, e => alert('Không lấy được vị trí: ' + e.message), {enableHighAccuracy:true,timeout:8000});
+    // ========= CONFIG API =========
+    // Đảm bảo backend FastAPI đang chạy ở đây:
+    const API_BASE = "http://127.0.0.1:5000/api";
+    // Đăng ký: ghi vào MOCK_DATA.json (kèm upload avatar)
+    const MOCK_SIGNUP_URL = `${API_BASE}/mock/signup`;
+    // Đăng nhập: nếu bạn dùng router mock-auth trước đó thì để như dưới;
+    // nếu không, hãy đổi sang endpoint login bạn đang có.
+    const MOCK_LOGIN_URL  = `${API_BASE}/mock-auth/login`;
+
+    // ========= LOCAL STORAGE =========
+    const storage = {
+      setUser(u){ localStorage.setItem('dss.user', JSON.stringify(u)); },
+      getUser(){ const s = localStorage.getItem('dss.user'); return s? JSON.parse(s):null; },
+      clear(){ localStorage.removeItem('dss.user'); }
     };
 
-    // Đăng ký
-    signupForm.onsubmit = async (e) => {
-      e.preventDefault();
-      const f = e.target;
-      const body = {
-        email: f.email.value.trim(),
-        password: f.password.value,
-        fullName: f.fullName.value.trim(),
-        gender: f.gender.value,
-        birthday: f.birthday.value,
-        latitude: f.latitude.value ? Number(f.latitude.value) : null,
-        longitude: f.longitude.value ? Number(f.longitude.value) : null,
-        avatarUrl: f.avatarUrl.value || null,
-        hobbiesText: f.hobbiesText.value || null,
-        habitsText: f.habitsText.value || null,
-        valuesText: f.valuesText.value || null
-      };
-      try { const u = await api.signup(body); storage.setUser(u); location.href='index.html'; }
-      catch (err) { notify(err.message || 'Đăng ký thất bại'); }
-<div class ="col2">
-        <label>Ảnh đại diện </label>
-        <div class="row" style="gap 12px;align-item:flex-start">
-            <img id="avatarPreview" src="/uploads/default_1.jpg" alt="Ảnh đại diện" style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:1px solid #ccc"/>
-            <div class="input" style="flex:1">
-                <input type ="hidden" name = "avatarUrl" value = "/uploads/default_1.jpg"/>
-                <input id="avatarFile" type="file" accept="image/*"/>
-                <span class="help">Chọn ảnh từ máy tính (tối đa 2MB)</span>
-            </div>  
-        </div>
-</div>
-};
+    // ========= AVATAR PREVIEW =========
+    const suAvatar = document.getElementById('suAvatar');
+    const fileName = document.getElementById('fileName');
+    const avatarPreview = document.getElementById('avatarPreview');
+    suAvatar.addEventListener('change', () => {
+      const f = suAvatar.files?.[0];
+      fileName.textContent = f ? f.name : "Chưa chọn ảnh";
+      if (f) avatarPreview.src = URL.createObjectURL(f);
+    });
 
-    // Đăng nhập
-    loginForm.onsubmit = async (e) => {
+    // ========= SIGNUP (ghi MOCK_DATA.json) =========
+    document.getElementById('signupForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      try { const u = await api.login({ email: loginForm.email.value.trim(), password: loginForm.password.value });
-            storage.setUser(u); location.href='index.html'; }
-      catch (err) { notify(err.message || 'Đăng nhập thất bại'); }
-    };
+      const suMsg = document.getElementById('suMsg'); suMsg.textContent = "Đang tạo tài khoản…";
+
+      const fd = new FormData();
+      fd.append('email',     document.getElementById('suEmail').value.trim());
+      fd.append('password',  document.getElementById('suPassword').value);
+      fd.append('fullName',  document.getElementById('suName').value.trim());
+      fd.append('gender',    document.getElementById('suGender').value);
+      fd.append('birthday',  document.getElementById('suDob').value); // yyyy-mm-dd
+      fd.append('education', document.getElementById('suEducation').value);
+      fd.append('occupation',document.getElementById('suOccupation').value);
+      fd.append('nativeland',document.getElementById('suNativeland').value);
+      fd.append('bio',       document.getElementById('suBio').value);
+      if (suAvatar.files?.[0]) fd.append('avatar', suAvatar.files[0]);
+
+      try{
+        const r = await fetch(MOCK_SIGNUP_URL, { method:'POST', body: fd });
+        if (!r.ok) throw new Error(await r.text());
+        const data = await r.json(); // { ok, profile: {...} }
+
+        // Lưu user nhẹ vào localStorage để dùng cho FE
+        storage.setUser({
+          userId:   data.profile.UserID,
+          fullName: data.profile.FullName,
+          email:    document.getElementById('suEmail').value.trim(),
+          avatarUrl:data.profile.Avatar
+        });
+
+        suMsg.textContent = "Tạo tài khoản thành công!";
+        // chuyển về trang chủ
+        setTimeout(()=> location.href = "index.html", 500);
+      }catch(err){
+        suMsg.innerHTML = `<span class="error">Lỗi đăng ký: ${err?.message || err}</span>`;
+      }
+    });
+
+    // ========= LOGIN (mock-auth) =========
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const liMsg = document.getElementById('liMsg'); liMsg.textContent = "Đang đăng nhập…";
+      try{
+        const body = {
+          email: document.getElementById('liEmail').value.trim(),
+          password: document.getElementById('liPassword').value
+        };
+        const r = await fetch(MOCK_LOGIN_URL, {
+          method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)
+        });
+        if (!r.ok) throw new Error(await r.text());
+        const data = await r.json(); // { ok, user:{ id,email,fullName,avatarUrl } }
+        storage.setUser({
+          userId:   data.user.id,
+          email:    data.user.email,
+          fullName: data.user.fullName || "",
+          avatarUrl:data.user.avatarUrl || ""
+        });
+        liMsg.textContent = "Đăng nhập thành công!";
+        setTimeout(()=> location.href = "index.html", 400);
+      }catch(err){
+        liMsg.innerHTML = `<span class="error">Lỗi đăng nhập: ${err?.message || err}</span>`;
+      }
+    });
   </script>
-  <link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="assets/auth.css">
-
 </body>
 </html>
